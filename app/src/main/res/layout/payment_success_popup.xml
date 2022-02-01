@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:layout_gravity="center"
+  android:background="@color/glass">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/white">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:id="@+id/failed_logo"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:tint="@color/color2"
+        ></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Your Order is Successfully Placed !"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:id="@+id/title_text_alert"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Your Order Id is :"
+        android:textSize="15sp"
+        android:textColor="@color/color1"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:id="@+id/content_text"></TextView>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/color1"
+        android:text="Close"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+</LinearLayout>
+</LinearLayout>

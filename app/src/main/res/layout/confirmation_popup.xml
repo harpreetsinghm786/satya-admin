@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/glass"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:layout_margin="5dp"
+       android:background="@drawable/buttonlogin"
+       android:backgroundTint="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+       android:id="@+id/confirm"
+       android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dot"
+        android:backgroundTint="@color/color1">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="70sp"
+  android:gravity="center"
+
+    android:textColor="@color/white"
+    android:text=" ? "></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Really want to place this order?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:id="@+id/title_text_alert"></TextView>
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/color2"
+        android:text="Yes, Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+    <Button
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/color1"
+        android:text="No, Cancel"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+   </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/white"
+        android:id="@+id/cancelreason"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+       android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+                       android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/color1"
+            android:text="Select cause for cancellation of order"
+            android:layout_margin="10dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiogroup"
+                android:padding="5dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r1"
+                    android:text="I need to Alter my existing order."></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r2"
+                    android:layout_marginTop="5dp"
+                    android:text="Delayed realization of not compairing the price."></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/r3"
+                    android:text="Ordered out of excitement and realized its of no need."></RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/r4"
+                    android:text="For any other reasons">
+
+                </RadioButton>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Enter cause of cancellation"
+                    android:textSize="15sp"
+                    android:id="@+id/otherreason"
+                    android:visibility="gone"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/color1"
+                    android:inputType="textMultiLine"
+
+                    ></EditText>
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/cancelorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonlogin"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/color1"
+                android:text="Yes, Cancel this Order"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"></Button>
+            <Button
+                android:id="@+id/rclose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/buttonlogin"
+                android:backgroundTint="@color/color2"
+                android:text="Close"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+   </LinearLayout>
+</LinearLayout>

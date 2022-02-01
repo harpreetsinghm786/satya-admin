@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".master_prices"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center|top">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_plate"
+            android:backgroundTint="@color/smooth_grey"
+            android:padding="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:gravity="center_vertical">
+            <Spinner
+                android:id="@+id/components"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="35dp"></Spinner>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color2"
+                android:textColor="@color/white"
+                android:layout_margin="5sp"
+                android:textAllCaps="false"
+                android:src="@drawable/ic_add_black_24dp"
+                android:id="@+id/add"
+                android:elevation="10sp"
+                android:text="Add new addon"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_plate"
+    android:layout_margin="5dp"
+    android:visibility="gone"
+    android:id="@+id/adder"
+
+    >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color1"
+                android:hint="Enter Name"
+                android:layout_marginTop="10sp"
+                android:textSize="14dp"
+                android:id="@+id/newname"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:backgroundTint="@android:color/transparent"
+                ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color1"
+        android:hint="Enter Price"
+        android:layout_marginTop="10sp"
+        android:textSize="14dp"
+        android:id="@+id/newprice"
+        android:paddingLeft="10dp"
+        android:inputType="number"
+        android:backgroundTint="@android:color/transparent"
+        ></EditText>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color2"
+                android:textColor="@color/white"
+                android:layout_margin="10sp"
+                android:textAllCaps="false"
+                android:id="@+id/save"
+                android:elevation="10sp"
+                android:text="Save"></Button>
+</LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color1"
+                android:hint="Enter New Price"
+                android:layout_marginTop="10sp"
+                android:textSize="14dp"
+                android:id="@+id/edit_price"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:backgroundTint="@android:color/transparent"
+                ></EditText>
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color2"
+                android:textColor="@color/white"
+                android:layout_margin="5sp"
+                android:textAllCaps="false"
+                android:id="@+id/Done"
+                android:elevation="10sp"
+                android:text="Done"></Button>
+
+
+        </LinearLayout>
+        <include layout="@layout/progressbar"></include>
+    </RelativeLayout>
+</LinearLayout>

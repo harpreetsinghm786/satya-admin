@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".new_sub_category">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_plate"
+        android:backgroundTint="@color/smooth_grey"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addsubcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:backgroundTint="@color/color2"
+            android:elevation="10sp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:text="Add new addon"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new Subcategory"
+            android:textColor="@color/color1"></TextView>
+
+        <LinearLayout
+            android:id="@+id/uploader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/genre_item"></include>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/choose_category"></androidx.appcompat.widget.AppCompatSpinner>
+
+
+
+            <EditText
+                android:id="@+id/new_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color1"
+                android:textSize="14dp"></EditText>
+
+            <EditText
+                android:id="@+id/new_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Enter Tag ( 2-3 words max)"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color1"
+                android:textSize="14dp"></EditText>
+
+            <EditText
+                android:id="@+id/new_likes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Likes"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color1"
+                android:textSize="14dp"></EditText>
+
+            <Button
+                android:id="@+id/new_subcategory_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/buttonlogin"
+                android:backgroundTint="@color/color1"
+                android:elevation="10sp"
+                android:text="Choose Image"
+                android:textAllCaps="false"
+                android:textColor="@color/white"></Button>
+
+            <Button
+                android:id="@+id/new_subcategory_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/buttonlogin"
+                android:backgroundTint="@color/color2"
+                android:elevation="10sp"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:textColor="@color/white"></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Available Subcategories"
+                android:textColor="@color/color1"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/available_subcategories"
+                android:layout_marginTop="5dp"
+                ></androidx.recyclerview.widget.RecyclerView>
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonlogin"
+                android:backgroundTint="@color/color1"
+                android:elevation="10sp"
+                android:text="Delete"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/progressbar"></include>
+</RelativeLayout>
+
+</LinearLayout>

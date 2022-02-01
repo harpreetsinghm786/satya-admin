@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/lightblack</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/liteblack</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/lightblack</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+    
+    <style name="TabLayoutStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:editTextColor">@color/white</item>
+
+    </style>
+
+
+    <style name="mytheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorAccent">@color/liteblack</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:textSize">14dp</item>
+
+    </style>
+
+</resources>

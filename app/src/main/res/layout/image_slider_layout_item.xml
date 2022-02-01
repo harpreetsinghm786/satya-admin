@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+
+        >
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        app:riv_corner_radius="10dp"
+        android:id="@+id/iv_auto_image_slider"></com.makeramen.roundedimageview.RoundedImageView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/color2"
+            android:tint="@color/white"
+            android:id="@+id/delete"
+            android:src="@drawable/ic_delete_black_24dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/iv_gif_container"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"></ImageView>
+
+</RelativeLayout>

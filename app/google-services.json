@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "387854501801",
+    "firebase_url": "https://satya-8b1a7.firebaseio.com",
+    "project_id": "satya-8b1a7",
+    "storage_bucket": "satya-8b1a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387854501801:android:e1b3fea9faa2028cf966b8",
+        "android_client_info": {
+          "package_name": "com.official.pb.satya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387854501801-i7hlphpfo2for6efsf3ha7kd764p3dvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.pb.satya",
+            "certificate_hash": "1cdec38189ea4a5a84a51665deade3815303a8ca"
+          }
+        },
+        {
+          "client_id": "387854501801-rcaramlslhirv3v4a37djn8a6dtm07oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.pb.satya",
+            "certificate_hash": "36165e422a7d63368c12bf6d80d0f1fa5a45fd43"
+          }
+        },
+        {
+          "client_id": "387854501801-dblim2mk6naermomfvv0glohnmtpr3ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDckU3R3B_SOZtnglKlXYtxlOW1_HsOGu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387854501801-dblim2mk6naermomfvv0glohnmtpr3ai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387854501801:android:24956df7375c8280f966b8",
+        "android_client_info": {
+          "package_name": "com.official.satyaadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387854501801-dlqedd8upslgk818rbb9rk74dek7j890.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.satyaadmin",
+            "certificate_hash": "36165e422a7d63368c12bf6d80d0f1fa5a45fd43"
+          }
+        },
+        {
+          "client_id": "387854501801-dblim2mk6naermomfvv0glohnmtpr3ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDckU3R3B_SOZtnglKlXYtxlOW1_HsOGu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387854501801-dblim2mk6naermomfvv0glohnmtpr3ai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

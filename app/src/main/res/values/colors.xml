@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF5350</color>
+    <color name="colorPrimaryDark">#76F7DC</color>
+    <color name="color">#36F3AE</color>
+    <color name="colorAccent">#F10C5D</color>
+    <color name="white">#fff</color>
+    <color name="green">#056F1C</color>
+    <color name="sharpgreen">#009B22</color>
+    <color name="green2">#94EF5350</color>
+    <color name="darkgreen">#002E18</color>
+    <color name="golden">#F5C90C</color>
+    <color name="darkyellow">#EEC23D</color>
+    <color name="black">#F10C5D</color>
+    <color name="main">#F10C5D</color>
+    <color name="blackover">#5C5959</color>
+    <color name="glass">#A3000000</color>
+    <color name="liteblack">#E0E0E0</color>
+    <color name="fade">#86F0F0F0</color>
+    <color name="megenta">#f91138</color>
+    <color name="lightblack">#000000</color>
+    <color name="lightGreen">#2469FF</color>
+    <color name="grey">#F3F1F1</color>
+    <color name="cold_grey">#E7E6E6</color>
+    <color name="endcolor">#014141</color>
+    <color name="startcolor">#05C7AC</color>
+    <color name="color1">#424549</color>
+    <color name="cold_black">#262626</color>
+    <color name="color2">#FF8282</color>
+    <color name="color3">#E79F65</color>
+    <color name="color4">#A7A7AA</color>
+    <color name="smooth_grey">#F3F2F2</color>
+    <color name="black_overlay">#646464</color>
+</resources>
+

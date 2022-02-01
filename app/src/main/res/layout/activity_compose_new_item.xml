@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Satya Admin"
+                app:titleTextColor="@color/color1"
+                ></androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_plate"
+                        android:backgroundTint="@color/smooth_grey">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+
+                            android:layout_margin="10dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Product"
+                                android:textSize="15dp"
+                                android:textStyle="bold"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center_horizontal"
+                                >
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/category"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/spinner_style"
+                                    ></Spinner>
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/subcategory"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/spinner_style"
+                                    ></Spinner>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Name of Product"
+                                    android:textSize="14dp"
+                                    android:id="@+id/name"
+                                    android:layout_marginTop="10sp"
+                                    android:backgroundTint="@android:color/transparent"
+
+                                    ></EditText>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Desicription of components (Max 5 to 10 words)"
+                                    android:textSize="14dp"
+                                    android:layout_marginTop="10sp"
+                                    android:inputType="textMultiLine"
+                                    android:id="@+id/description"
+                                    android:backgroundTint="@android:color/transparent"
+
+                                    ></EditText>
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Upload Images"
+                                    android:textColor="@color/white"
+                                    android:textAllCaps="false"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="15sp"
+                                    android:id="@+id/choose"
+                                    android:background="@color/color2"></Button>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/selected_images"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/trending"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/spinner_style"
+                                    ></Spinner>
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Rating(Integer value form 1 to 5)"
+                                    android:layout_marginTop="10sp"
+                                    android:textSize="14dp"
+                                    android:id="@+id/rating"
+                                    android:inputType="numberDecimal"
+                                    android:backgroundTint="@android:color/transparent"
+                                    ></EditText>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Percentage OFF"
+                                    android:layout_marginTop="10sp"
+                                    android:textSize="14dp"
+                                    android:id="@+id/percentage_off"
+                                    android:inputType="numberDecimal"
+                                    android:backgroundTint="@android:color/transparent"
+                                    ></EditText>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Not Price(INR)"
+                                    android:layout_marginTop="10sp"
+                                    android:textSize="14dp"
+                                    android:id="@+id/not_price"
+                                    android:inputType="numberDecimal"
+                                    android:backgroundTint="@android:color/transparent"
+                                    ></EditText>
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Price(INR)"
+                                    android:layout_marginTop="10sp"
+                                    android:textSize="14dp"
+                                    android:id="@+id/price"
+                                    android:inputType="numberDecimal"
+                                    android:backgroundTint="@android:color/transparent"
+                                    ></EditText>
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/color1"
+                                    android:hint="Tags"
+                                    android:layout_marginTop="10sp"
+                                    android:textSize="14dp"
+                                    android:id="@+id/tags"
+                                    android:inputType="text"
+                                    android:backgroundTint="@android:color/transparent"
+                                    ></EditText>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="14dp"
+                                        android:textColor="@color/color1"
+                                        android:text="Item is for :"></TextView>
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/women"
+                                        android:textColor="@color/color1"
+                                        android:text="Womens"></CheckBox>
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/girls"
+                                        android:textColor="@color/color1"
+                                        android:text="Girls"></CheckBox>
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/kids"
+                                        android:textColor="@color/color1"
+                                        android:text="Kids"></CheckBox>
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/marrige"
+                                        android:textColor="@color/color1"
+                                        android:text="Marriage"></CheckBox>
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/simple"
+                                        android:textColor="@color/color1"
+                                        android:text="Simple and For Home"></CheckBox>
+                                </LinearLayout>
+
+
+
+
+
+
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/color2"
+                                    android:textColor="@color/white"
+                                    android:layout_margin="5sp"
+                                    android:textAllCaps="false"
+                                    android:id="@+id/upload"
+                                    android:elevation="10sp"
+                                    android:text="Upload"></Button>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/progressbar"></include>
+    </RelativeLayout>
+
+</LinearLayout>

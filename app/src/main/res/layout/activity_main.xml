@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Satya Admin"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/color1"
+        ></androidx.appcompat.widget.Toolbar>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/newsubcategory"
+                    android:text="New Sub Category"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    ></Button>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:text="New Item"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/newitem"
+                    ></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/newaddon"
+                    android:text="New Add On"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    ></Button>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/sections"
+                    android:text="Sections"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    ></Button>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/masterprices"
+                    android:text="Master Prices"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    ></Button>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:layout_margin="10dp"
+                    android:text="Orders"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/buttonlogin"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/orders"
+                    ></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="30dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/edit_text_background">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:hint="Version code"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/version_code"
+                        android:singleLine="false"
+                        android:text=""
+                        android:inputType="text"
+                        android:textColorHint="@color/grey"
+                        android:gravity="left|center_vertical"
+                        android:background="@drawable/edit_text_background"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textColor="@color/white"
+                        ></EditText>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttonlogin"
+                    android:text="Update"
+                    android:id="@+id/update"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/color2"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    ></Button>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttonlogin"
+                    android:text="Banner"
+                    android:id="@+id/bannners"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/color2"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    ></Button>
+            </LinearLayout>
+        </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        ></FrameLayout>
+</RelativeLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/progressbar"></include>
+</RelativeLayout>
+
+</LinearLayout>

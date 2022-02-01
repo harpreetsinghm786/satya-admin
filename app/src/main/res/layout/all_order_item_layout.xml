@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id :"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textColor="@color/color1"
+                android:layout_marginLeft="5sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderid"
+                android:text="abcd"
+                android:textStyle="bold"
+                android:textColor="@color/color1"
+                android:textSize="13sp"
+                android:layout_marginLeft="5sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="top"
+                >
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/color2">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/itemcount"
+                        android:textColor="@color/white"
+                        android:text="4"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/color1"
+                        android:text="Items"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/orderlist"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:orientation="horizontal"
+           android:weightSum="10">
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:textSize="12sp"
+               android:layout_weight="8"
+               android:textColor="@color/color1"
+               android:id="@+id/order_date">
+
+           </TextView>
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="15dp"
+               android:textSize="12sp"
+               android:layout_weight="2"
+               android:gravity="right"
+               android:textColor="@color/color1"
+               android:id="@+id/amount">
+
+           </TextView>
+
+
+
+
+
+       </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginLeft="15dp"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/sharpgreen"
+            android:id="@+id/deliverydate"></TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/smooth_grey"></View>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
